@@ -1,7 +1,6 @@
 # Consensus Generation and Dice Score Analysis
 
-This folder contains a Python script that computes **consensus segmentations** across multiple AI models and evaluates **model agreement using Dice scores**.  
-Consensus masks are saved as NIfTI files, and Dice results are stored in a summary CSV file.
+This folder contains a Python script that computes **consensus segmentations** across multiple AI models and evaluates **model agreement using Dice scores**. Consensus masks are saved as NIfTI files, and Dice results are stored in a summary CSV file.
 
 ---
 ## Required Input Data
@@ -22,18 +21,14 @@ The DICOM input directory must contain CT studies organized in the hierarchical 
 │           └── ... additional SEG files ...
 ``````
 #### Explanation of each level
-- **PatientID**  
-  A subject identifier assigned by the dataset (e.g., NLST). Each patient folder may contain one or more imaging studies.
-- **StudyInstanceUID**  
-  A unique identifier for a specific imaging study. A study may include multiple imaging series.
-- **CT_<SeriesInstanceUID>**  
-  The folder containing a CT series. Its name begins with `CT_` followed by the `SeriesInstanceUID`.  
-  This is the *leaf folder* that contains the individual `.dcm` files.
-- **SEG_<Model>_*.dcm**  
-    A DICOM-SEG file containing multiple anatomical structures predicted by one segmentation model. The script automatically detects all SEG files inside each CT folder and converts them into NIfTI format for further analysis.
+- **PatientID:** A subject identifier assigned by the dataset (e.g., NLST). Each patient folder may contain one or more imaging studies.
+- **StudyInstanceUID:** A unique identifier for a specific imaging study. A study may include multiple imaging series.
+- **CT_<SeriesInstanceUID>:** The folder containing a CT series. Its name begins with `CT_` followed by the `SeriesInstanceUID`. This is the *leaf folder* that contains the individual `.dcm` files.
+- **SEG_<Model>_*.dcm:** A DICOM-SEG file containing multiple anatomical structures predicted by one segmentation model. The script automatically detects all SEG files inside each CT folder and converts them into NIfTI format for further analysis.
 
 ### 2. DICOM Base Directory Structure
 A CSV file is required to define which anatomical structures should be included in the consensus and Dice score evaluation.
+
 Example:
 | final_label | count | models                    |
 |-------------|-------|---------------------------|
