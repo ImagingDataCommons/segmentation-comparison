@@ -22,6 +22,7 @@ The pipeline consists of **two main steps**:
 ### segment_snomed_mapping.xlsx
 A harmonized mapping of model-specific labels to SNOMED-CT codes and recommended display colors is maintained in a single Excel sheet. This sheet contains a harmonized label map for TotalSegmentator v1.5, TotalSegmentator v2.6, MOOSE, MultiTalen, Auto3DSeg, and CADS.
 Each worksheet corresponds to one segmentation model and defines: Harmonized label names, Corresponding SNOMED-CT codes, DICOM Segmentation categories and types, and recommended display RGB color values.
+
 Each worksheet can be exported to a CSV file, which is then used as input for the JSON-generation script that creates a dcmqi-compatible segmentation dictionary.
 
 ---
