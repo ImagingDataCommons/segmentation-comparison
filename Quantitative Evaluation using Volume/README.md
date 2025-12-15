@@ -51,6 +51,7 @@ seg_nifti_base/
 
 ### 2) Convert DICOM to NIfTI (Optional)
 Use this mode if your data is still available as DICOM CT slices and DICOM SEG objects.
+#### Terminal Prompt
 ```bash
 python calculate_radiomics.py convert \
   <dicom_input_dir> \
@@ -59,7 +60,7 @@ python calculate_radiomics.py convert \
   <segimage2itkimage_path>
 ```
 
-### Arguments
+#### Arguments
 - **dicom_input_dir:** Base directory containing the original DICOM data (CT DICOM slice files or DICOM SEG objects (SEG_*.dcm)) organized as:
 ```
 dicom_base/
