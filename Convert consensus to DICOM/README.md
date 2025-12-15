@@ -74,6 +74,7 @@ In addition, two CSV files are required:
 
 - A **structure definition CSV** (e.g., `example_structure_codes.csv`) that defines each anatomical structure and its DICOM segmentation ontology codes (SNOMED-CT), including `label_name`, category/type codes, and `recommendedDisplayRGBValue`.
 - A **model overview CSV** (e.g., `example_structures_overview_all_models.csv`) that lists, for each structure, how many models contribute to the consensus and which models they are.
+  
 The provided CSV files are examples for our specific use case. If other models or anatomical structures are used, custom CSV files with the corresponding structure definitions and model information must be created.
 
 The three scripts are designed to be run in sequence:
