@@ -1,0 +1,301 @@
+label_name,class_map,Category.CodingSchemeDesignator,Category.CodeValue,Category.CodeMeaning,Type.CodingSchemeDesignator,Type.CodeValue,Type.CodeMeaning,TypeModifier.CodingSchemeDesignator,TypeModifier.CodeValue,TypeModifier.CodeMeaning,AnatomicRegion.CodingSchemeDesignator,AnatomicRegion.CodeValue,AnatomicRegion.CodeMeaning,AnatomicRegionModifier.CodingSchemeDesignator,AnatomicRegionModifier.CodeValue,AnatomicRegionModifier.CodeMeaning,recommendedDisplayRGBValue,recommendedDisplayRGBValue.R,recommendedDisplayRGBValue.G,recommendedDisplayRGBValue.B
+adrenal_gland_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,23451007,Adrenal gland,SCT,7771000,Left,,,,,,,"[199, 27, 27]",199,27,27
+adrenal_gland_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,23451007,Adrenal gland,SCT,24028007,Right,,,,,,,"[199, 27, 27]",199,27,27
+anterior_scalene_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,50755001,Structure of scalenus anterior muscle,SCT,7771000,Left,,,,,,,"[77, 201, 67]",,,
+anterior_scalene_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,50755001,Structure of scalenus anterior muscle,SCT,24028007,Right,,,,,,,"[77, 201, 67]",,,
+aorta,"heartchambers_highres,total,total_mr",SCT,123037004,Anatomical Structure,SCT,15825003,Aorta,,,,,,,,,,"[224, 97, 76]",224,97,76
+atrial_appendage_left,total,SCT,123037004,Anatomical Structure,SCT,68786006,Auricular appendage,SCT,7771000,Left,,,,,,,"[255, 68, 204]",,,
+auditory_canal_left,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,84301002,External auditory canal,SCT,7771000,Left,,,,,,,"[79, 162, 200]",,,
+auditory_canal_right,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,84301002,External auditory canal,SCT,24028007,Right,,,,,,,"[79, 162, 200]",,,
+autochthon_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,244849004,Deep muscle of back,SCT,7771000,Left,,,,,,,"[192, 104, 88]",192,104,88
+autochthon_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,244849004,Deep muscle of back,SCT,24028007,Right,,,,,,,"[192, 104, 88]",192,104,88
+body_extremities,"body,body_mr",SCT,123037004,Anatomical Structure,SCT,66019005,Limb,,,,,,,,,,"[255, 51, 153]",,,
+body_trunc,"body,body_mr",SCT,123037004,Anatomical Structure,SCT,22943007,Trunk,,,,,,,,,,"[0, 104, 55]",,,
+brachiocephalic_trunk,total,SCT,123037004,Anatomical Structure,SCT,12691009,Brachiocephalic artery,,,,,,,,,,"[255, 141, 0]",,,
+brachiocephalic_vein_left,total,SCT,123037004,Anatomical Structure,SCT,8887007,Brachiocephalic vein,SCT,7771000,Left,,,,,,,"[255, 195, 0]",,,
+brachiocephalic_vein_right,total,SCT,123037004,Anatomical Structure,SCT,8887007,Brachiocephalic vein,SCT,24028007,Right,,,,,,,"[75, 0, 130]",,,
+brain,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,12738006,Brain,,,,,,,,,,"[250, 250, 225]",250,250,225
+brainstem,brain_structures,SCT,123037004,Anatomical Structure,SCT,15926001,Brainstem structure,,,,,,,,,,"[64, 224, 208]",,,
+breast,breasts,SCT,123037004,Anatomical Structure,SCT,76752008,Breast,,,,,,,,,,"[80, 208, 12]",,,
+carpal,appendicular_bones,SCT,123037004,Anatomical Structure,SCT,83936004,Carpus,,,,,,,,,,"[176, 196, 222]",,,
+caudate_nucleus,brain_structures,SCT,123037004,Anatomical Structure,SCT,11000004,Caudate nucleus,,,,,,,,,,"[79, 216, 50]",,,
+central_sulcus,brain_structures,SCT,123037004,Anatomical Structure,SCT,28294002,Structure of central sulcus,,,,,,,,,,"[112, 249, 112]",,,
+cerebellum,brain_structures,SCT,123037004,Anatomical Structure,SCT,113305005,Cerebellum,,,,,,,,,,"[169, 141, 0]",,,
+clavicula_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,51299004,Clavicle,SCT,7771000,Left,,,,,,,"[241, 188, 38]",241,188,38
+clavicula_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,51299004,Clavicle,SCT,24028007,Right,,,,,,,"[241, 188, 38]",241,188,38
+colon,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,71854001,Colon,,,,,,,,,,"[204, 168, 143]",204,168,143
+common_carotid_artery_left,total,SCT,123037004,Anatomical Structure,SCT,32062004,Common carotid artery,SCT,7771000,Left,,,,,,,"[0, 121, 140]",,,
+common_carotid_artery_right,total,SCT,123037004,Anatomical Structure,SCT,32062004,Common carotid artery,SCT,24028007,Right,,,,,,,"[255, 87, 51]",,,
+coracobrachial,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,44202005,Structure of coracobrachialis muscle,,,,,,,,,,"[159, 163, 139]",,,
+coronary_arteries,coronary_arteries,SCT,123037004,Anatomical Structure,SCT,41801008,Coronary artery,,,,,,,,,,"[100, 149, 237]",,,
+costal_cartilages,total,SCT,123037004,Anatomical Structure,SCT,50016007,Costal cartilage,,,,,,,,,,"[138, 43, 226]",,,
+cricoid_cartilage,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,8600008,Cricoid cartilage structure,,,,,,,,,,"[67, 241, 115]",,,
+deltoid,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,35259002,Deltoid muscle,,,,,,,,,,"[43, 190, 101]",,,
+digastric_left,head_muscles,SCT,123037004,Anatomical Structure,SCT,52410001,Digastric muscle structure,SCT,7771000,Left,,,,,,,"[142, 205, 63]",,,
+digastric_right,head_muscles,SCT,123037004,Anatomical Structure,SCT,52410001,Digastric muscle structure,SCT,24028007,Right,,,,,,,"[142, 205, 63]",,,
+duodenum,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,38848004,Duodenum,,,,,,,,,,"[255, 253, 229]",255,253,229
+esophagus,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,32849002,Esophagus,,,,,,,,,,"[211, 171, 143]",211,171,143
+eye_left,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,81745001,Eye,SCT,7771000,Left,,,,,,,"[154, 205, 50]",,,
+eye_lens_left,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,78076003,Structure of lens of eye,SCT,7771000,Left,,,,,,,"[132, 197, 87]",,,
+eye_lens_right,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,78076003,Structure of lens of eye,SCT,24028007,Right,,,,,,,"[132, 197, 87]",,,
+eye_right,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,81745001,Eye,SCT,24028007,Right,,,,,,,"[154, 205, 50]",,,
+eyeball_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,79652003,Eyeball,SCT,7771000,Left,,,,,,,"[154, 205, 50]",,,
+eyeball_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,79652003,Eyeball,SCT,24028007,Right,,,,,,,"[154, 205, 50]",,,
+face,"face,face_mr",SCT,123037004,Anatomical Structure,SCT,89545001,Face,,,,,,,,,,"[255, 182, 193]",255,182,193
+femur,,SCT,123037004,Anatomical Structure,SCT,71341001,Femur,,,,,,,,,,"[130, 222, 207]",,,
+femur_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,71341001,Femur,SCT,7771000,Left,,,,,,,"[130, 222, 207]",130,222,207
+femur_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,71341001,Femur,SCT,24028007,Right,,,,,,,"[130, 222, 207]",130,222,207
+fibula,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,87342007,Fibula,,,,,,,,,,"[255, 122, 92]",,,
+fourth_ventricle,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,35918002,Fourth ventricle,,,,,,,,,,"[219, 172, 38]",,,
+frontal_lobe,brain_structures,SCT,123037004,Anatomical Structure,SCT,83251001,Frontal lobe,,,,,,,,,,"[191, 98, 26]",,,
+gallbladder,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,28231008,Gallbladder,,,,,,,,,,"[139, 150, 98]",139,150,98
+gluteus_maximus_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,181674001,Gluteus maximus muscle,SCT,7771000,Left,,,,,,,"[192, 104, 88]",192,104,88
+gluteus_maximus_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,181674001,Gluteus maximus muscle,SCT,24028007,Right,,,,,,,"[192, 104, 88]",192,104,88
+gluteus_medius_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,78333006,Gluteus medius muscle,SCT,7771000,Left,,,,,,,"[192, 104, 88]",192,104,88
+gluteus_medius_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,78333006,Gluteus medius muscle,SCT,24028007,Right,,,,,,,"[192, 104, 88]",192,104,88
+gluteus_minimus_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,75297007,Gluteus minius muscle,SCT,7771000,Left,,,,,,,"[192, 104, 88]",192,104,88
+gluteus_minimus_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,75297007,Gluteus minius muscle,SCT,24028007,Right,,,,,,,"[192, 104, 88]",192,104,88
+hard_palate,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,90228003,Hard palate structure,,,,,,,,,,"[134, 151, 0]",,,
+heart,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,80891009,Heart,,,,,,,,,,"[239, 71, 111]",,,
+heart_atrium_left,heartchambers_highres,SCT,123037004,Anatomical Structure,SCT,82471001,Left atrium,,,,,,,,,,"[221, 129, 37]",221,129,37
+heart_atrium_right,heartchambers_highres,SCT,123037004,Anatomical Structure,SCT,73829009,Right atrium,,,,,,,,,,"[221, 129, 37]",221,129,37
+heart_myocardium,heartchambers_highres,SCT,123037004,Anatomical Structure,SCT,74281007,Myocardium,,,,,,,,,,"[192, 104, 88]",192,104,88
+heart_ventricle_left,heartchambers_highres,SCT,123037004,Anatomical Structure,SCT,87878005,Left ventricle of heart,,,,,,,,,,"[152, 55, 13]",152,55,13
+heart_ventricle_right,heartchambers_highres,SCT,123037004,Anatomical Structure,SCT,53085002,Right ventricle of heart,,,,,,,,,,"[181, 85, 57]",181,85,57
+hip_implant,hip_implant,SCT,260787004,Physical object,SCT,40388003,Implant,,,,SCT,24136001,Hip joint,,,,"[219, 112, 147]",,,
+hip_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,29836001,Hip,SCT,7771000,Left,,,,,,,"[241, 214, 145]",241,214,145
+hip_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,29836001,Hip,SCT,24028007,Right,,,,,,,"[241, 214, 145]",241,214,145
+humerus,,SCT,123037004,Anatomical Structure,SCT,85050009,Humerus,,,,,,,,,,"[255, 182, 193]",,,
+humerus_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,85050009,Humerus,SCT,7771000,Left,,,,,,,"[95, 229, 185]",95,229,185
+humerus_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,85050009,Humerus,SCT,24028007,Right,,,,,,,"[95, 229, 185]",95,229,185
+hyoid,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,21387005,Hyoid bone structure,,,,,,,,,,"[62, 169, 108]",,,
+hypopharynx,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,81502006,Hypopharynx,,,,,,,,,,"[153, 127, 5]",,,
+iliac_artery_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,73634005,Common iliac artery,SCT,7771000,Left,,,,,,,"[217, 162, 48]",217,162,48
+iliac_artery_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,73634005,Common iliac artery,SCT,24028007,Right,,,,,,,"[217, 162, 48]",217,162,48
+iliac_vena_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,46027005,Common iliac vein,SCT,7771000,Left,,,,,,,"[197, 174, 37]",197,174,37
+iliac_vena_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,46027005,Common iliac vein,SCT,24028007,Right,,,,,,,"[197, 174, 37]",197,174,37
+iliopsoas_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,68455001,Iliopsoas muscle,SCT,7771000,Left,,,,,,,"[192, 104, 88]",192,104,88
+iliopsoas_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,68455001,Iliopsoas muscle,SCT,24028007,Right,,,,,,,"[192, 104, 88]",192,104,88
+inferior_oblique_muscle_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,57516003,Inferior oblique muscle structure,SCT,7771000,Left,,,,,,,"[198, 126, 10]",,,
+inferior_oblique_muscle_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,57516003,Inferior oblique muscle structure,SCT,24028007,Right,,,,,,,"[198, 126, 10]",,,
+inferior_pharyngeal_constrictor,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,80461005,Inferior constrictor pharyngeus muscle structure,,,,,,,,,,"[246, 105, 135]",,,
+inferior_rectus_muscle_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,47869003,Inferior rectus muscle structure,SCT,7771000,Left,,,,,,,"[114, 76, 2]",,,
+inferior_rectus_muscle_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,47869003,Inferior rectus muscle structure,SCT,24028007,Right,,,,,,,"[114, 76, 2]",,,
+inferior_vena_cava,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,64131007,Inferior vena cava,,,,,,,,,,"[110, 165, 54]",110,165,54
+infraspinatus,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,72573008,Infraspinatus muscle,,,,,,,,,,"[39, 90, 86]",,,
+insular_cortex,brain_structures,SCT,123037004,Anatomical Structure,SCT,,,,,,,,,,,,"[191, 245, 77]",,,
+intermuscular_fat,tissue_4_types,SCT,85756007,Tissue,SCT,55603005,Fat,,,,,,,,,,"[116, 101, 39]",,,
+internal_capsule,brain_structures,SCT,123037004,Anatomical Structure,SCT,85637007,internal capsule,,,,,,,,,,"[134, 16, 8]",,,
+internal_carotid_artery_left,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,86117002,Internal Carotid Artery,SCT,7771000,Left,,,,,,,"[136, 224, 211]",,,
+internal_carotid_artery_right,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,86117002,Internal Carotid Artery,SCT,24028007,Right,,,,,,,"[136, 224, 211]",,,
+internal_jugular_vein_left,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,12123001,Internal jugular vein,SCT,7771000,Left,,,,,,,"[149, 207, 64]",,,
+internal_jugular_vein_right,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,12123001,Internal jugular vein,SCT,24028007,Right,,,,,,,"[149, 207, 64]",,,
+intervertebral_discs,"total_mr,vertebrae_body",SCT,123037004,Anatomical Structure,SCT,360499006,Intervertebral disc,,,,,,,,,,"[106, 76, 147]",,,
+intracerebral_hemorrhage,cerebral_bleed,SCT,49755003,Morphologically Altered Structure,SCT,50960005,Hemorrhage,,,,SCT,12738006,Brain,,,,"[32, 178, 170]",,,
+kidney_cyst_left,"kidney_cysts,total",SCT,49755003,Morphologically Altered Structure,SCT,367643001,Cyst,,,,SCT,64033007,Kidney,SCT,7771000,Left,"[255, 209, 102]",,,
+kidney_cyst_right,"kidney_cysts,total",SCT,49755003,Morphologically Altered Structure,SCT,367643001,Cyst,,,,SCT,64033007,Kidney,SCT,24028007,Right,"[6, 214, 160]",,,
+kidney_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,64033007,Kidney,SCT,7771000,Left,,,,,,,"[212, 126, 151]",212,126,151
+kidney_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,64033007,Kidney,SCT,24028007,Right,,,,,,,"[212, 126, 151]",212,126,151
+larynx_air,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,4596009,Larynx,,,,,,,,,,"[223, 34, 250]",,,
+lateral_pterygoid_left,head_muscles,SCT,123037004,Anatomical Structure,SCT,88938001,Structure of lateral pterygoid muscle,SCT,7771000,Left,,,,,,,"[199, 135, 190]",,,
+lateral_pterygoid_right,head_muscles,SCT,123037004,Anatomical Structure,SCT,88938001,Structure of lateral pterygoid muscle,SCT,24028007,Right,,,,,,,"[199, 135, 190]",,,
+lateral_rectus_muscle_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,31836009,Lateral rectus muscle structure,SCT,7771000,Left,,,,,,,"[208, 246, 65]",,,
+lateral_rectus_muscle_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,31836009,Lateral rectus muscle structure,SCT,24028007,Right,,,,,,,"[208, 246, 65]",,,
+left_coronary_cusp,aortic_sinuses,SCT,123037004,Anatomical Structure,SCT,81797008,Structure of cusp of aortic valve,SCT,7771000,Left,,,,,,,"[191, 170, 118]",,,
+left_ventricular_outflow_tract,aortic_sinuses,SCT,123037004,Anatomical Structure,SCT,13418002,Structure of outflow tract of left ventricle,,,,,,,,,,"[183, 70, 16]",,,
+lentiform_nucleus,brain_structures,SCT,123037004,Anatomical Structure,SCT,41648007,Lentiform nucleus structure,,,,,,,,,,"[127, 163, 169]",,,
+levator_palpebrae_superioris_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,58641002,Levator palpebrae superioris structure,SCT,7771000,Left,,,,,,,"[241, 175, 134]",,,
+levator_palpebrae_superioris_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,58641002,Levator palpebrae superioris structure,SCT,24028007,Right,,,,,,,"[241, 175, 134]",,,
+levator_scapulae_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,11327007,Structure of levator scapulae muscle,SCT,7771000,Left,,,,,,,"[109, 212, 31]",,,
+levator_scapulae_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,11327007,Structure of levator scapulae muscle,SCT,24028007,Right,,,,,,,"[109, 212, 31]",,,
+liver,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,10200004,Liver,,,,,,,,,,"[221, 130, 101]",221,130,101
+liver_segment_1,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,71133005,Structure of caudate lobe of liver,,,,,,,,,,"[5, 26, 88]",,,
+liver_segment_2,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277956007,Structure of Couinaud hepatic segment II,,,,,,,,,,"[156, 110, 195]",,,
+liver_segment_3,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277957003,Structure of Couinaud hepatic segment III,,,,,,,,,,"[219, 131, 164]",,,
+liver_segment_4,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277958008,Structure of Couinaud hepatic segment IV,,,,,,,,,,"[181, 158, 218]",,,
+liver_segment_5,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277959000,Structure of Couinaud hepatic segment V,,,,,,,,,,"[7, 218, 211]",,,
+liver_segment_6,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277960005,Structure of Couinaud hepatic segment VI,,,,,,,,,,"[209, 246, 252]",,,
+liver_segment_7,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277961009,Structure of Couinaud hepatic segment VII,,,,,,,,,,"[57, 99, 199]",,,
+liver_segment_8,"liver_segments,liver_segments_mr",SCT,123037004,Anatomical Structure,SCT,277962002,Structure of Couinaud hepatic segment VIII,,,,,,,,,,"[106, 81, 76]",,,
+liver_tumor,liver_vessels,SCT,49755003,Morphologically Altered Structure,SCT,108369006,Neoplasm,,,,SCT,10200004,Liver,,,,"[128, 128, 0]",,,
+liver_vessels,liver_vessels,SCT,123037004,Anatomical Structure,SCT,59820001,Blood vessel,,,,SCT,10200004,Liver,,,,"[0, 255, 255]",,,
+lung,lung_nodules,SCT,123037004,Anatomical Structure,SCT,39607008,Lung,,,,,,,,,,"[112, 162, 95]",,,
+lung_covid_infiltrate,covid,SCT,49755003,Morphologically Altered Structure,SCT,47351003,Infiltrate,SCT,840539006,COVID-19,SCT,39607008,Lung,,,,"[255, 69, 0]",,,
+lung_left,total_mr,SCT,123037004,Anatomical Structure,SCT,39607008,Lung,SCT,7771000,Left,,,,,,,"[255, 159, 64]",,,
+lung_lower_lobe_left,total,SCT,123037004,Anatomical Structure,SCT,90572001,Lower lobe of lung,SCT,7771000,Left,,,,,,,"[242, 150, 232]",242,150,232
+lung_lower_lobe_right,total,SCT,123037004,Anatomical Structure,SCT,90572001,Lower lobe of lung,SCT,24028007,Right,,,,,,,"[212, 191, 32]",212,191,32
+lung_middle_lobe_right,total,SCT,123037004,Anatomical Structure,SCT,72481006,Middle lobe of right lung,,,,,,,,,,"[202, 164, 140]",202,164,140
+lung_nodules,lung_nodules,,,,,,,,,,,,,,,,"[182, 123, 121]",,,
+lung_right,total_mr,SCT,123037004,Anatomical Structure,SCT,39607008,Lung,SCT,24028007,Right,,,,,,,"[0, 176, 155]",,,
+lung_trachea_bronchia,lung_vessels,SCT,123037004,Anatomical Structure,SCT,110726009,Trachea and bronchus,,,,,,,,,,"[70, 130, 180]",,,
+lung_upper_lobe_left,total,SCT,123037004,Anatomical Structure,SCT,45653009,Upper lobe of lung,SCT,7771000,Left,,,,,,,"[112, 162, 95]",112,162,95
+lung_upper_lobe_right,total,SCT,123037004,Anatomical Structure,SCT,45653009,Upper lobe of lung,SCT,24028007,Right,,,,,,,"[173, 69, 44]",173,69,44
+lung_vessels,lung_vessels,SCT,123037004,Anatomical Structure,SCT,59820001,Blood vessel,,,,SCT,39607008,Lung,,,,"[255, 215, 0]",,,
+masseter_left,head_muscles,SCT,123037004,Anatomical Structure,SCT,79368004,Masseter muscle structure,SCT,7771000,Left,,,,,,,"[71, 31, 101]",,,
+masseter_right,head_muscles,SCT,123037004,Anatomical Structure,SCT,79368004,Masseter muscle structure,SCT,24028007,Right,,,,,,,"[71, 31, 101]",,,
+medial_pterygoid_left,head_muscles,SCT,123037004,Anatomical Structure,SCT,85002005,Structure of medial pterygoid muscle,SCT,7771000,Left,,,,,,,"[189, 124, 147]",,,
+medial_pterygoid_right,head_muscles,SCT,123037004,Anatomical Structure,SCT,85002005,Structure of medial pterygoid muscle,SCT,24028007,Right,,,,,,,"[189, 124, 147]",,,
+medial_rectus_muscle_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,24937009,Medial rectus muscle structure,SCT,7771000,Left,,,,,,,"[15, 14, 33]",,,
+medial_rectus_muscle_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,24937009,Medial rectus muscle structure,SCT,24028007,Right,,,,,,,"[15, 14, 33]",,,
+metacarpal,appendicular_bones,SCT,123037004,Anatomical Structure,SCT,36455000,Metacarpal bones,,,,,,,,,,"[255, 215, 0]",,,
+metatarsal,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,53884002,Metatarsal,,,,,,,,,,"[75, 0, 130]",,,
+middle_pharyngeal_constrictor,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,66138004,Middle pharyngeal constrictor muscle structure,,,,,,,,,,"[205, 46, 41]",,,
+middle_scalene_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,38630006,Structure of scalenus medius muscle,SCT,7771000,Left,,,,,,,"[208, 116, 98]",,,
+middle_scalene_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,38630006,Structure of scalenus medius muscle,SCT,24028007,Right,,,,,,,"[208, 116, 98]",,,
+nasal_cavity_left,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,279549004,nasal cavity,SCT,7771000,Left,,,,,,,"[176, 105, 63]",,,
+nasal_cavity_right,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,279549004,nasal cavity,SCT,24028007,Right,,,,,,,"[176, 105, 63]",,,
+nasopharynx,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,360955006,Nasopharynx,,,,,,,,,,"[252, 143, 210]",,,
+non_coronary_cusp,aortic_sinuses,SCT,123037004,Anatomical Structure,SCT,244366007,Entire posterior cusp of aortic valve,,,,,,,,,,"[176, 119, 131]",,,
+occipital_lobe,brain_structures,SCT,123037004,Anatomical Structure,SCT,31065004,Occipital lobe,,,,,,,,,,"[40, 155, 129]",,,
+optic_nerve_left,"head_glands_cavities,oculomotor_muscles",SCT,123037004,Anatomical Structure,SCT,18234004,optic nerve,SCT,7771000,Left,,,,,,,"[240, 128, 128]",,,
+optic_nerve_right,"head_glands_cavities,oculomotor_muscles",SCT,123037004,Anatomical Structure,SCT,18234004,optic nerve,SCT,24028007,Right,,,,,,,"[240, 128, 128]",,,
+oropharynx,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,31389004,oropharynx,,,,,,,,,,"[186, 101, 74]",,,
+pancreas,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,15776009,Pancreas,,,,,,,,,,"[249, 180, 111]",249,180,111
+parietal_lobe,brain_structures,SCT,123037004,Anatomical Structure,SCT,16630005,Parietal lobe,,,,,,,,,,"[229, 243, 102]",,,
+parotid_gland_left,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,45289007,Parotid gland,SCT,7771000,Left,,,,,,,"[255, 165, 0]",,,
+parotid_gland_right,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,45289007,Parotid gland,SCT,24028007,Right,,,,,,,"[255, 165, 0]",,,
+patella,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,64234005,Patella,,,,,,,,,,"[64, 224, 208]",,,
+pectoralis_minor,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,18686000,Pectoralis minor muscle,,,,,,,,,,"[23, 137, 93]",,,
+pericardial_effusion,pleural_pericard_effusion,SCT,49755003,Morphologically Altered Structure,SCT,41699000,Effusion,,,,SCT,25489000,Pericardial cavity,,,,"[255, 128, 0]",,,
+phalanges_feet,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,28641004,Phalanx structure,,,,,,,,,,"[255, 20, 147]",,,
+phalanges_hand,appendicular_bones,SCT,123037004,Anatomical Structure,SCT,28641004,Phalanx structure,,,,,,,,,,"[25, 25, 112]",,,
+platysma_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,18252004,Structure of platysma muscle,SCT,7771000,Left,,,,,,,"[126, 168, 30]",,,
+platysma_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,18252004,Structure of platysma muscle,SCT,24028007,Right,,,,,,,"[126, 168, 30]",,,
+pleural_effusion,pleural_pericard_effusion,SCT,49755003,Morphologically Altered Structure,SCT,41699000,Effusion,,,,SCT,91381003,Pleural cavity,,,,"[128, 0, 128]",,,
+portal_vein_and_splenic_vein,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,110765007,Portal vein and splenic vein,,,,,,,,,,"[0, 151, 206]",0,151,206
+posterior_scalene_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,58162002,Structure of scalenus posterior muscle,SCT,7771000,Left,,,,,,,"[77, 13, 192]",,,
+posterior_scalene_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,58162002,Structure of scalenus posterior muscle,SCT,24028007,Right,,,,,,,"[77, 13, 192]",,,
+prevertebral_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,,,SCT,7771000,Left,,,,,,,"[8, 57, 255]",,,
+prevertebral_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,,,SCT,24028007,Right,,,,,,,"[8, 57, 255]",,,
+prostate,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,41216001,Prostate,,,,,,,,,,"[230, 57, 70]",,,
+pulmonary_artery,heartchambers_highres,SCT,123037004,Anatomical Structure,SCT,81040000,Pulmonary artery,,,,,,,,,,"[0, 122, 171]",0,122,171
+pulmonary_vein,total,SCT,123037004,Anatomical Structure,SCT,122972007,Pulmonary vein,,,,,,,,,,"[7, 59, 76]",,,
+quadriceps_femoris_left,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,21989003,Quadriceps femoris muscle,,,,,,,,,,"[255, 177, 78]",,,
+quadriceps_femoris_right,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,21989003,Quadriceps femoris muscle,,,,,,,,,,"[46, 134, 193]",,,
+radius,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,62413002,Radius,,,,,,,,,,"[139, 69, 19]",,,
+rib_left_1,total,SCT,123037004,Anatomical Structure,SCT,48535007,First rib,SCT,7771000,Left,,,,,,,"[0, 2, 145]",0,2,145
+rib_left_10,total,SCT,123037004,Anatomical Structure,SCT,77644006,Tenth rib,SCT,7771000,Left,,,,,,,"[26, 97, 228]",26,97,228
+rib_left_11,total,SCT,123037004,Anatomical Structure,SCT,58830002,Eleventh rib,SCT,7771000,Left,,,,,,,"[16, 164, 144]",16,164,144
+rib_left_12,total,SCT,123037004,Anatomical Structure,SCT,43993008,Twelfth rib,SCT,7771000,Left,,,,,,,"[166, 89, 255]",166,89,255
+rib_left_2,total,SCT,123037004,Anatomical Structure,SCT,78247007,Second rib,SCT,7771000,Left,,,,,,,"[141, 186, 216]",141,186,216
+rib_left_3,total,SCT,123037004,Anatomical Structure,SCT,25888004,Third rib,SCT,7771000,Left,,,,,,,"[30, 128, 188]",30,128,188
+rib_left_4,total,SCT,123037004,Anatomical Structure,SCT,25523003,Fourth rib,SCT,7771000,Left,,,,,,,"[73, 228, 202]",73,228,202
+rib_left_5,total,SCT,123037004,Anatomical Structure,SCT,15339008,Fifth rib,SCT,7771000,Left,,,,,,,"[8, 82, 73]",8,82,73
+rib_left_6,total,SCT,123037004,Anatomical Structure,SCT,59558009,Sixth rib,SCT,7771000,Left,,,,,,,"[88, 119, 255]",88,119,255
+rib_left_7,total,SCT,123037004,Anatomical Structure,SCT,24915002,Seventh rib,SCT,7771000,Left,,,,,,,"[109, 0, 145]",109,0,145
+rib_left_8,total,SCT,123037004,Anatomical Structure,SCT,5953002,Eighth rib,SCT,7771000,Left,,,,,,,"[164, 216, 199]",164,216,199
+rib_left_9,total,SCT,123037004,Anatomical Structure,SCT,22565002,Ninth rib,SCT,7771000,Left,,,,,,,"[96, 188, 62]",96,188,62
+rib_right_1,total,SCT,123037004,Anatomical Structure,SCT,48535007,First rib,SCT,24028007,Right,,,,,,,"[0, 2, 145]",0,2,145
+rib_right_10,total,SCT,123037004,Anatomical Structure,SCT,77644006,Tenth rib,SCT,24028007,Right,,,,,,,"[26, 97, 228]",26,97,228
+rib_right_11,total,SCT,123037004,Anatomical Structure,SCT,58830002,Eleventh rib,SCT,24028007,Right,,,,,,,"[16, 164, 144]",16,164,144
+rib_right_12,total,SCT,123037004,Anatomical Structure,SCT,43993008,Twelfth rib,SCT,24028007,Right,,,,,,,"[166, 89, 255]",166,89,255
+rib_right_2,total,SCT,123037004,Anatomical Structure,SCT,78247007,Second rib,SCT,24028007,Right,,,,,,,"[141, 186, 216]",141,186,216
+rib_right_3,total,SCT,123037004,Anatomical Structure,SCT,25888004,Third rib,SCT,24028007,Right,,,,,,,"[30, 128, 188]",30,128,188
+rib_right_4,total,SCT,123037004,Anatomical Structure,SCT,25523003,Fourth rib,SCT,24028007,Right,,,,,,,"[73, 228, 202]",73,228,202
+rib_right_5,total,SCT,123037004,Anatomical Structure,SCT,15339008,Fifth rib,SCT,24028007,Right,,,,,,,"[8, 82, 73]",8,82,73
+rib_right_6,total,SCT,123037004,Anatomical Structure,SCT,59558009,Sixth rib,SCT,24028007,Right,,,,,,,"[88, 119, 255]",88,119,255
+rib_right_7,total,SCT,123037004,Anatomical Structure,SCT,24915002,Seventh rib,SCT,24028007,Right,,,,,,,"[109, 0, 145]",109,0,145
+rib_right_8,total,SCT,123037004,Anatomical Structure,SCT,5953002,Eighth rib,SCT,24028007,Right,,,,,,,"[164, 216, 199]",164,216,199
+rib_right_9,total,SCT,123037004,Anatomical Structure,SCT,22565002,Ninth rib,SCT,24028007,Right,,,,,,,"[96, 188, 62]",96,188,62
+right_coronary_cusp,aortic_sinuses,SCT,123037004,Anatomical Structure,SCT,244366007,Structure of cusp of aortic valve,SCT,24028007,Right,,,,,,,"[32, 36, 16]",,,
+sacrum,"total,total_mr,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,54735007,Sacrum,,,,,,,,,,"[163, 140, 140]",163,140,140
+sartorius_left,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,12595009,Sartorius muscle,SCT,7771000,Left,,,,,,,"[50, 205, 50]",,,
+sartorius_right,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,12595009,Sartorius muscle,SCT,24028007,Right,,,,,,,"[199, 21, 133]",,,
+scapula_left,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,79601000,Scapula,SCT,7771000,Left,,,,,,,"[199, 204, 131]",199,204,131
+scapula_right,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,79601000,Scapula,SCT,24028007,Right,,,,,,,"[199, 204, 131]",199,204,131
+septum_pellucidum,brain_structures,SCT,123037004,Anatomical Structure,SCT,70146006,Septum pellucidum structure,,,,,,,,,,"[147, 187, 173]",,,
+serratus_anterior,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,18346003,Serratus anterior muscle,,,,,,,,,,"[83, 225, 13]",,,
+skeletal_muscle,"tissue_4_types,tissue_types,tissue_types_mr",SCT,123037004,Anatomical Structure,SCT,127954009,Skeletal muscle,,,,,,,,,,"[102, 51, 153]",,,
+skull,"oculomotor_muscles,total",SCT,123037004,Anatomical Structure,SCT,89546000,Skull,,,,,,,,,,"[255, 111, 97]",,,
+small_bowel,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,30315005,Small Intestine,,,,,,,,,,"[205, 167, 142]",205,167,142
+soft_palate,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,49460000,Soft palate,,,,,,,,,,"[3, 183, 149]",,,
+spinal_cord,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,2748008,Spinal cord,,,,,,,,,,"[131, 56, 236]",,,
+spleen,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,78961009,Spleen,,,,,,,,,,"[157, 108, 162]",157,108,162
+sterno_thyroid_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,1087003,Structure of sternothyroid muscle,SCT,7771000,Left,,,,,,,"[1, 113, 35]",,,
+sterno_thyroid_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,1087003,Structure of sternothyroid muscle,SCT,24028007,Right,,,,,,,"[1, 113, 35]",,,
+sternocleidomastoid_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,22823000,Structure of sternocleidomastoid muscle,SCT,7771000,Left,,,,,,,"[131, 4, 145]",,,
+sternocleidomastoid_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,22823000,Structure of sternocleidomastoid muscle,SCT,24028007,Right,,,,,,,"[131, 4, 145]",,,
+sternum,total,SCT,123037004,Anatomical Structure,SCT,56873002,Sternum,,,,,,,,,,"[0, 230, 118]",,,
+stomach,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,69695003,Stomach,,,,,,,,,,"[160, 139, 76]",160,139,76
+styloid_process_left,headneck_bones_vessels,,,,,,,SCT,7771000,Left,,,,,,,"[86, 170, 4]",,,
+styloid_process_right,headneck_bones_vessels,,,,,,,SCT,24028007,Right,,,,,,,"[86, 170, 4]",,,
+subarachnoid_space,brain_structures,SCT,123037004,Anatomical Structure,SCT,35951006,Subarachnoid space,,,,,,,,,,"[124, 8, 21]",,,
+subclavian_artery_left,total,SCT,123037004,Anatomical Structure,SCT,29700009,Subclavian artery,SCT,7771000,Left,,,,,,,"[142, 68, 173]",,,
+subclavian_artery_right,total,SCT,123037004,Anatomical Structure,SCT,29700009,Subclavian artery,SCT,24028007,Right,,,,,,,"[0, 168, 120]",,,
+subcutaneous_fat,"tissue_4_types,tissue_types,tissue_types_mr",SCT,85756007,Tissue,SCT,67769002,Subcutaneous fatty tissue,,,,,,,,,,"[238, 130, 238]",,,
+submandibular_gland_left,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,54019009,Submandibular gland,SCT,7771000,Left,,,,,,,"[189, 183, 107]",,,
+submandibular_gland_right,head_glands_cavities,SCT,123037004,Anatomical Structure,SCT,54019009,Submandibular gland,SCT,24028007,Right,,,,,,,"[189, 183, 107]",,,
+subscapularis,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,90588001,Subscapularis muscle,,,,,,,,,,"[71, 205, 198]",,,
+superior_oblique_muscle_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,66041005,Superior oblique muscle structure,SCT,7771000,Left,,,,,,,"[17, 176, 56]",,,
+superior_oblique_muscle_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,66041005,Superior oblique muscle structure,SCT,24028007,Right,,,,,,,"[17, 176, 56]",,,
+superior_pharyngeal_constrictor,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,82182001,Superior pharyngeal constrictor muscle structure,,,,,,,,,,"[154, 235, 137]",,,
+superior_rectus_muscle_left,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,5815008,Superior rectus muscle structure,SCT,7771000,Left,,,,,,,"[144, 95, 49]",,,
+superior_rectus_muscle_right,oculomotor_muscles,SCT,123037004,Anatomical Structure,SCT,5815008,Superior rectus muscle structure,SCT,24028007,Right,,,,,,,"[144, 95, 49]",,,
+superior_vena_cava,total,SCT,123037004,Anatomical Structure,SCT,48345005,Superior vena cava,,,,,,,,,,"[0, 200, 83]",,,
+supraspinatus,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,6423006,Supraspinatus muscle,,,,,,,,,,"[47, 40, 224]",,,
+tarsal,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,108371006,Tarsal bones,,,,,,,,,,"[218, 165, 32]",,,
+temporal_lobe,brain_structures,SCT,123037004,Anatomical Structure,SCT,78277001,Temporal lobe,,,,,,,,,,"[26, 246, 252]",,,
+temporalis_left,head_muscles,SCT,123037004,Anatomical Structure,SCT,52927003,Structure of temporalis muscle,SCT,7771000,Left,,,,,,,"[253, 184, 5]",,,
+temporalis_right,head_muscles,SCT,123037004,Anatomical Structure,SCT,52927003,Structure of temporalis muscle,SCT,24028007,Right,,,,,,,"[253, 184, 5]",,,
+teres_major,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,1193009,Teres major muscle,,,,,,,,,,"[236, 236, 17]",,,
+thalamus,brain_structures,SCT,123037004,Anatomical Structure,SCT,119406000,Thalamus,,,,,,,,,,"[18, 124, 1]",,,
+thigh_medial_compartment_left,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,1179657002,Structure of medial muscle of thigh,SCT,7771000,Left,,,,,,,"[255, 99, 71]",,,
+thigh_medial_compartment_right,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,1179657002,Structure of medial muscle of thigh,SCT,24028007,Right,,,,,,,"[0, 191, 255]",,,
+thigh_posterior_compartment_left,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,128511007,Posterior muscle of thigh structure,SCT,7771000,Left,,,,,,,"[153, 102, 204]",,,
+thigh_posterior_compartment_right,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,128511007,Posterior muscle of thigh structure,SCT,24028007,Right,,,,,,,"[255, 105, 180]",,,
+third_ventricle,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,49841001,Third ventricle,,,,,,,,,,"[77, 230, 20]",,,
+thyrohyoid_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,113226007,Structure of thyrohyoid muscle,SCT,7771000,Left,,,,,,,"[83, 56, 211]",,,
+thyrohyoid_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,113226007,Structure of thyrohyoid muscle,SCT,24028007,Right,,,,,,,"[83, 56, 211]",,,
+thyroid_cartilage,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,52940008,Thyroid cartilage structure,,,,,,,,,,"[1, 218, 65]",,,
+thyroid_gland,total,SCT,123037004,Anatomical Structure,SCT,69748006,Thyroid gland,,,,,,,,,,"[45, 82, 160]",,,
+tibia,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,12611008,Tibia,,,,,,,,,,"[0, 144, 158]",,,
+tongue,head_muscles,SCT,123037004,Anatomical Structure,SCT,21974007,Tongue,,,,,,,,,,"[8, 204, 18]",,,
+torso_fat,"tissue_4_types,tissue_types,tissue_types_mr",SCT,85756007,Tissue,SCT,55603005,Fat,,,,SCT,22943007,Trunk,,,,"[210, 105, 30]",,,
+trachea,total,SCT,123037004,Anatomical Structure,SCT,44567001,Trachea,,,,,,,,,,"[182, 228, 255]",182,228,255
+trapezius,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,31764008,Trapezius muscle,,,,,,,,,,"[254, 69, 249]",,,
+trapezius_left,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,31764008,Trapezius muscle,SCT,7771000,Left,,,,,,,"[254, 69, 249]",,,
+trapezius_right,headneck_muscles,SCT,123037004,Anatomical Structure,SCT,31764008,Trapezius muscle,SCT,24028007,Right,,,,,,,"[254, 69, 249]",,,
+triceps_brachii,"thigh_shoulder_muscles,thigh_shoulder_muscles_mr",SCT,123037004,Anatomical Structure,SCT,40284004,Triceps brachii muscle structure,,,,,,,,,,"[232, 57, 97]",,,
+ulna,"appendicular_bones,appendicular_bones_mr",SCT,123037004,Anatomical Structure,SCT,23416004,Ulna,,,,,,,,,,"[0, 250, 154]",,,
+urinary_bladder,"total,total_mr",SCT,123037004,Anatomical Structure,SCT,89837001,Urinary bladder,,,,,,,,,,"[222, 154, 132]",222,154,132
+venous_sinuses,brain_structures,SCT,123037004,Anatomical Structure,SCT,54944003,Structure of dural sinus,,,,,,,,,,"[103, 43, 17]",,,
+ventricle,brain_structures,SCT,123037004,Anatomical Structure,SCT,21814001,Ventricle,,,,,,,,,,"[152, 55, 13]",,,
+ventricle_body_left,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,34803007,Structure of body of lateral ventricle,SCT,7771000,Left,,,,,,,"[180, 100, 42]",,,
+ventricle_body_right,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,34803007,Structure of body of lateral ventricle,SCT,7771000,Left,,,,,,,"[180, 100, 42]",,,
+ventricle_frontal_horn_left,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,30399003,Structure of anterior horn of lateral ventricle,SCT,7771000,Left,,,,,,,"[43, 120, 225]",,,
+ventricle_frontal_horn_right,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,30399003,Structure of anterior horn of lateral ventricle,SCT,7771000,Left,,,,,,,"[43, 120, 225]",,,
+ventricle_occipital_horn_left,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,52943005,Structure of posterior horn of lateral ventricle,SCT,7771000,Left,,,,,,,"[83, 239, 100]",,,
+ventricle_occipital_horn_right,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,52943005,Structure of posterior horn of lateral ventricle,SCT,7771000,Left,,,,,,,"[83, 239, 100]",,,
+ventricle_temporal_horn_left,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,53118009,Structure of inferior horn of lateral ventricle,SCT,7771000,Left,,,,,,,"[186, 85, 119]",,,
+ventricle_temporal_horn_right,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,53118009,Structure of inferior horn of lateral ventricle,SCT,7771000,Left,,,,,,,"[186, 85, 119]",,,
+ventricle_trigone_left,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,,,SCT,7771000,Left,,,,,,,"[45, 159, 0]",,,
+ventricle_trigone_right,ventricle_parts,SCT,123037004,Anatomical Structure,SCT,,,SCT,7771000,Left,,,,,,,"[45, 159, 0]",,,
+vertebrae,total_mr,SCT,123037004,Anatomical Structure,SCT,51282000,Vertebra,,,,,,,,,,"[184, 59, 94]",,,
+vertebrae_body,vertebrae_body,SCT,123037004,Anatomical Structure,SCT,3572006,Vertebral body,,,,,,,,,,"[255, 0, 255]",,,
+vertebrae_C1,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,14806007,C1 vertebra,,,,,,,,,,"[255, 186, 107]",255,186,107
+vertebrae_C2,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,39976000,C2 vertebra,,,,,,,,,,"[193, 99, 36]",193,99,36
+vertebrae_C3,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,113205007,C3 vertebra,,,,,,,,,,"[167, 117, 152]",167,117,152
+vertebrae_C4,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,5329002,C4 vertebra,,,,,,,,,,"[250, 14, 116]",250,14,116
+vertebrae_C5,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,36978003,C5 vertebra,,,,,,,,,,"[118, 40, 9]",118,40,9
+vertebrae_C6,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,36054005,C6 vertebra,,,,,,,,,,"[253, 134, 125]",253,134,125
+vertebrae_C7,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,87391001,C7 vertebra,,,,,,,,,,"[255, 0, 0]",255,0,0
+vertebrae_L1,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,66794005,L1 vertebra,,,,,,,,,,"[255, 255, 1]",255,255,1
+vertebrae_L2,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,14293000,L2 vertebra,,,,,,,,,,"[255, 144, 32]",255,144,32
+vertebrae_L3,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,36470004,L3 vertebra,,,,,,,,,,"[157, 126, 0]",157,126,0
+vertebrae_L4,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,11994002,L4 vertebra,,,,,,,,,,"[255, 255, 128]",255,255,128
+vertebrae_L5,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,49668003,L5 vertebra,,,,,,,,,,"[117, 78, 55]",117,78,55
+vertebrae_S1,total,SCT,123037004,Anatomical Structure,SCT,65985001,S1 vertebra,,,,,,,,,,"[17, 138, 178]",,,
+vertebrae_T1,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,64864005,T1 vertebra,,,,,,,,,,"[0, 2, 145]",0,2,145
+vertebrae_T10,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,7610001,T10 vertebra,,,,,,,,,,"[26, 97, 228]",26,97,228
+vertebrae_T11,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,12989004,T11 vertebra,,,,,,,,,,"[16, 164, 144]",16,164,144
+vertebrae_T12,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,23215003,T12 vertebra,,,,,,,,,,"[166, 89, 255]",166,89,255
+vertebrae_T2,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,53733008,T2 vertebra,,,,,,,,,,"[141, 186, 216]",141,186,216
+vertebrae_T3,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,1626008,T3 vertebra,,,,,,,,,,"[30, 128, 188]",30,128,188
+vertebrae_T4,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,73071006,T4 vertebra,,,,,,,,,,"[73, 228, 202]",73,228,202
+vertebrae_T5,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,56401006,T5 vertebra,,,,,,,,,,"[8, 82, 73]",8,82,73
+vertebrae_T6,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,45296009,T6 vertebra,,,,,,,,,,"[88, 119, 255]",88,119,255
+vertebrae_T7,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,62487009,T7 vertebra,,,,,,,,,,"[109, 0, 145]",109,0,145
+vertebrae_T8,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,11068009,T8 vertebra,,,,,,,,,,"[164, 216, 199]",164,216,199
+vertebrae_T9,"total,vertebrae_mr",SCT,123037004,Anatomical Structure,SCT,82687006,T9 vertebra,,,,,,,,,,"[96, 188, 62]",96,188,62
+zygomatic_arch_left,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,51204001,Zygomatic arch structure,SCT,7771000,Left,,,,,,,"[160, 22, 207]",,,
+zygomatic_arch_right,headneck_bones_vessels,SCT,123037004,Anatomical Structure,SCT,51204001,Zygomatic arch structure,SCT,24028007,Right,,,,,,,"[160, 22, 207]",,,
