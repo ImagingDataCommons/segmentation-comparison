@@ -111,7 +111,9 @@ nifti_base/
 
 ### Step 2: Create dcmqi metadata JSON per CT
 **Script:** `convert_csv_to_json_for_consensus.py`
+
 **Goal:** Convert each `filtered_structures.csv` into a dcmqi-compatible metadata JSON file (`<Algorithm>-dcmqi_seg_dict.json`) that describes all segments (codes, names, colors, and models contributing to the consensus).
+
 **Input:**
 - `base_folder` → root of the consensus NIfTI directory (`nifti_base/`)
 - overview_csv → model overview CSV (e.g., `example_structures_overview_all_models.csv`)
@@ -139,12 +141,15 @@ nifti_base/
 
 ### Step 3: Convert consensus NIfTI + metadata into DICOM SEG
 **Script:** `convert_consensus_to_dicom.py`
+
 **Goal:** Combine the consensus NIfTI masks, the per-case JSON metadata, and the original CT DICOM series into a valid DICOM SEG object for each CT series.
+
 **Input:**
 - `nifti_base_dir` → root of the consensus NIfTI directory (`nifti_base/`)
 - `output_base_dir` → root of the output directory where DICOM SEG files will be written
 - `dicom_base_dir` → root of the original CT DICOM directory (`dicom_base/`)
 - `itkimage2segimage_path` → path to the itkimage2segimage binary from dcmqi
+
 **Terminal command:**
 ```bash
 python convert_consensus_to_dicom.py \
