@@ -53,7 +53,7 @@ def collect_volumes(base_dir):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python collect_volumes.py <features_reports_base_dir> <output_csv>")
+        print("Usage: python get_volume_csv.py <features_reports_base_dir> <output_csv>")
         sys.exit(1)
 
     features_reports_base_dir = sys.argv[1]

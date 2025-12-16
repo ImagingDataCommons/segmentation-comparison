@@ -7,7 +7,7 @@ import google.auth
 import sys
 
 if len(sys.argv) != 3:
-    print("Usage: python interactive_dice_scatter.py <input_csv> <output_html>")
+    print("Usage: python plot_interactive_dice.py <input_csv> <output_html>")
     sys.exit(1)
 
 csv_path = sys.argv[1]
