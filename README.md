@@ -6,7 +6,7 @@ The scripts implement a practical framework for harmonizing, comparing, and visu
 
 > **Preprint:** coming soon on arXiv  
 > **Interactive plots:** https://imagingdatacommons.github.io/segmentation-comparison/  
-> **Public data:** https://doi.org/10.5281/zenodo.17860591
+> **Public data:** https://doi.org/10.5281/zenodo.17860591  
 > **3D Slicer CrossSegmentationExplorer Extension:** https://github.com/ImagingDataCommons/CrossSegmentationExplorer
 
 ---
@@ -15,19 +15,19 @@ The scripts implement a practical framework for harmonizing, comparing, and visu
 
 This repository is organized into several folders, each corresponding to a specific stage of the workflow:
 
-- **Segmentation results harmonization**  
+- **Segmentation Results Harmonization**  
   Scripts for harmonizing model-specific segmentation outputs into a standardized representation
 
-- **Quantitative evaluation using Dice score**  
+- **Quantitative Evaluation using Dice Score**  
   Script to compute Dice scores and consensus segmentations.
 
-- **Convert consensus to DICOM**  
+- **Convert Consensus to DICOM**  
   Scripts to convert the consensus segmentations to DICOM using *dcmqi*.
 
-- **Quantitative evaluation using volume**  
+- **Quantitative Evaluation using Volume**  
   Radiomics-based extraction of structure volumes.
 
-- **Visualization of model agreement**  
+- **Visualization of Model Agreement**  
   Scripts for generating interactive Dice and volume plots using Plotly and OHIF Viewer.
 
 - **docs/**  
