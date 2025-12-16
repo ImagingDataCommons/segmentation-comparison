@@ -110,6 +110,45 @@
       width:100%; height:100%;
       border:0; display:block;
     }
+    .resourcebar{
+      margin: 10px auto 14px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      color: var(--muted);
+    }
+
+    .resourcebar .label{
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    .resourcebar a{
+      color: var(--fg);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .resourcebar a:hover{ color:#0f172a; }
+
+    .resourcebar .sep{
+      color: #cbd5e1;
+      user-select: none;
+    }
+
+    .resourcebar .disabled{
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      cursor: default;
+    }
+
+    .resourcebar .disabled:hover{ color: var(--muted); }
 
     footer{color:var(--muted); padding:28px 20px 40px; text-align:center}
   </style>
@@ -118,14 +157,39 @@
   <header>
     <div class="header-inner">
       <h1>In search of truth: Evaluating concordance of AI-based anatomy segmentation models</h1>
+      <div class="resourcebar" aria-label="Resources">
+      
+        <span class="disabled" title="Preprint coming soon">Preprint (coming soon on arXiv)</span>
+        <span class="sep">•</span>
+      
+        <a href="https://github.com/ImagingDataCommons/segmentation-comparison" target="_blank" rel="noopener">
+          Code Repository
+        </a>
+        <span class="sep">•</span>
+      
+        <a href="https://doi.org/10.5281/zenodo.17860591" target="_blank" rel="noopener">
+          Access segmentation data (Zenodo DOI)
+        </a>
+        <span class="sep">•</span>
+      
+        <a href="https://github.com/ImagingDataCommons/CrossSegmentationExplorer" target="_blank" rel="noopener">
+          3D Slicer CrossSegmentationExplorer Extension
+        </a>
+      </div>
 
       <p class="lead">
         This website presents the interactive plots accompanying the report
-        <em>“In search of truth: Evaluating concordance of AI-based anatomy segmentation models.”</em>
-        The startpage shows interactive <strong>Volume</strong> and <strong>Dice</strong> plots for all structure groups included in the analysis, with each plot including all models that provide a segmentation for the respective structure.
-        For some groups, dedicated sub-pages provide additional plots based on our findings.
-        All plots are fully interactive: you can zoom, pan, and toggle models in the legend.
-        Use <em>Open</em> to launch the respective plot in a new window.
+            <em>“In search of truth: Evaluating concordance of AI-based anatomy segmentation models.”</em>
+            The startpage shows interactive <strong>Volume</strong> and <strong>Dice</strong> plots for all structure groups included in the analysis, with each plot including all models that provide a segmentation for the respective structure.
+            For some groups, dedicated sub-pages provide additional plots based on our findings.
+            All plots are fully interactive: you can zoom, pan, and toggle models in the legend.
+            Use <em>Open</em> to launch the respective plot in a new window.
+            Each data point in the plots can be clicked to open an
+            <a href="https://ohif.org/" target="_blank" rel="noopener">OHIF Viewer</a>
+            session showing the corresponding CT image together with all available
+            segmentation results for that case.
+            Segmentations can be arranged by dragging them into the desired viewport,
+            and the layout can be customized using the viewer controls in the top toolbar.
       </p>
 
       <nav class="subnav" aria-label="Section navigation">
@@ -291,7 +355,7 @@
     </div>
   </section>
 
-  <footer>Code to generate the interactive plots is available at: https://github.com/ImagingDataCommons/segmentation-comparison</footer>
+  <footer></footer>
 
   <script>
     function openPlot(url){ window.open(url,'_blank','noopener,noreferrer'); }

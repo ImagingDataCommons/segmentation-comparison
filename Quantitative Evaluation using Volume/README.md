@@ -13,7 +13,7 @@ The primary purpose of this script is radiomics feature extraction. This require
 
 ## Usage
 
-### 1) Radiomics extraction
+### 1. Radiomics extraction
 Use this mode if CT images and segmentations already exist in NIfTI format
 
 #### Terminal Prompt
@@ -49,7 +49,7 @@ seg_nifti_base/
 
 - **results_dir:** Output directory where radiomics feature reports are written. The relative directory structure of the segmentation inputs is preserved.
 
-### 2) Convert DICOM to NIfTI (Optional)
+### 2. Convert DICOM to NIfTI (Optional)
 Use this mode if your data is still available as DICOM CT slices and DICOM SEG objects.
 #### Terminal Prompt
 ```bash

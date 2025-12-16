@@ -8,7 +8,7 @@ import sys
 
 if len(sys.argv) != 3:
     print(
-        "Usage: python interactive_overlap_scatter.py "
+        "Usage: python interactive_volume_plot.py "
         "<segmentation_volumes.csv> <output_dir>"
     )
     sys.exit(1)

@@ -33,7 +33,7 @@ def compute_statistics(df_results: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python compute_stats.py <input_scores_csv> <output_stats_csv>")
+        print("Usage: python compute_dice_statistics.py <input_scores_csv> <output_stats_csv>")
         sys.exit(1)
 
     input_csv = sys.argv[1]
