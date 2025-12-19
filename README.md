@@ -7,8 +7,11 @@ This repository contains the code and analysis scripts accompanying the followin
 The scripts implement a practical framework for harmonizing, comparing, and visually inspecting anatomy segmentation results from multiple AI models in the absence of ground-truth annotations. They aim to support informed model selection and transparent evaluation of AI-based segmentation methods.
 
 > **Preprint:** https://doi.org/10.48550/arXiv.2512.15921
+> 
 > **Interactive plots:** https://imagingdatacommons.github.io/segmentation-comparison/  
+>
 > **Public data:** https://doi.org/10.5281/zenodo.17860591  
+>
 > **3D Slicer CrossSegmentationExplorer Extension:** https://github.com/ImagingDataCommons/CrossSegmentationExplorer
 
 ---
