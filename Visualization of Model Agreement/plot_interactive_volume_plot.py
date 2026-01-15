@@ -5,6 +5,7 @@ from google.cloud import bigquery
 import google.auth
 import os
 import sys
+import re
 
 if len(sys.argv) != 3:
     print(
@@ -44,20 +45,16 @@ df_long = pd.melt(
 )
 #df_long = df_long[~df_long["method"].isin(["TS_1.5", "OMAS", "Moose", "MOOSE", "MultiTalent"])]
 
-
 df_long = df_long.drop_duplicates(
     subset=["caseID", "segment", "method", "ModelVolume", "OverlapVolume"]
 )
 
-
 all_segments = set(seg for _, seg_list in custom_segment_groups for seg in seg_list)
 df_long = df_long[df_long["segment"].isin(all_segments)].copy()
-
 
 df_long["OverlapPercent"] = df_long["OverlapVolume"] / df_long["ModelVolume"] * 100
 df_long["ModelVolume"] = df_long["ModelVolume"] / 1000  # 1 mL = 1000 mm³
 df_long["method"] = df_long["method"].str.upper()
-
 
 method_display_names = {
     "AUTO3DSEG": "Auto3Dseg",
@@ -69,7 +66,6 @@ method_display_names = {
 }
 df_long["method_display"] = df_long["method"].map(method_display_names)
 
-
 custom_palette = {
     "Auto3Dseg": "rgb(255, 127, 14)",
     "Moose": "rgb(44, 160, 44)",
@@ -79,6 +75,14 @@ custom_palette = {
     "CADS": "#9467BD"
 }
 
+method_seriesdescription_names = {
+    "AUTO3DSEG": ["Auto3DSeg"],
+    "MOOSE": ["MOOSE"],
+    "MULTITALENT": ["Multitalent"],
+    "OMAS": ["OMAS"],
+    "TS_1.5": ["TotalSegmentator(v1.5.6)"],
+    "TS_2.6": ["TotalSegmentator-"],
+}
 
 credentials, project = google.auth.default()
 client = bigquery.Client(credentials=credentials, project="idc-external-031")
@@ -94,50 +98,67 @@ query = """
     UNNEST(main.ReferencedSeriesSequence) AS ref  
 """
 df_bq = client.query(query).to_dataframe()
+print(df_bq.columns)
+
+df_bq["SeriesDescription"] = df_bq["SeriesDescription"].fillna("").astype(str)
+df_bq["SeriesDescription_lc"] = df_bq["SeriesDescription"].str.lower()
+
+if "Modality" in df_bq.columns:
+    df_bq_seg = df_bq[df_bq["Modality"].astype(str).str.upper().eq("SEG")].copy()
+    if df_bq_seg.empty:
+        df_bq_seg = df_bq.copy()
+else:
+    df_bq_seg = df_bq.copy()
+
+def get_seg_uid_for_method(study_id, ct_series_id, method):
+    sub = df_bq_seg[
+        (df_bq_seg["StudyInstanceUID"] == study_id) &
+        (df_bq_seg["ct_SeriesInstanceUID"] == ct_series_id)
+    ]
+
+    if sub.empty:
+        return ""
+
+    method_u = str(method).upper()
+    patterns = method_seriesdescription_names.get(method_u, [])
+
+    for p in patterns:
+        p_lc = p.lower()
+        hit = sub[sub["SeriesDescription_lc"].str.contains(re.escape(p_lc), na=False)]
+        if not hit.empty:
+            return hit["seg_SeriesInstanceUID"].iloc[0]
+
+    return sub["seg_SeriesInstanceUID"].iloc[0]
 
 def get_all_segmentations(study_id, ct_series_id):
     matching_segs = df_bq[
         (df_bq["StudyInstanceUID"] == study_id) &
         (df_bq["ct_SeriesInstanceUID"] == ct_series_id)
-    ]["seg_SeriesInstanceUID"].tolist()
+    ]["seg_SeriesInstanceUID"].dropna().tolist()
     return ",".join(matching_segs)
 
 if "studyID" not in df_long.columns:
-    study_mapping = df_bq[["ct_SeriesInstanceUID", "StudyInstanceUID"]].drop_duplicates().set_index("ct_SeriesInstanceUID")["StudyInstanceUID"]
+    study_mapping = (
+        df_bq[["ct_SeriesInstanceUID", "StudyInstanceUID"]]
+        .drop_duplicates()
+        .set_index("ct_SeriesInstanceUID")["StudyInstanceUID"]
+    )
     df_long["studyID"] = df_long["caseID"].map(study_mapping).fillna("UNKNOWN")
+
+df_long["initialSegUID"] = df_long.apply(
+    lambda row: get_seg_uid_for_method(row["studyID"], row["caseID"], row["method"]),
+    axis=1
+)
 
 df_long["url"] = df_long.apply(lambda row:
     f"https://segverify-viewer.web.app/viewer?"
     f"StudyInstanceUIDs={row['studyID']}&"
     f"SeriesInstanceUIDs={row['caseID']},{get_all_segmentations(row['studyID'], row['caseID'])}&"
+    f"initialSeriesInstanceUID={row['initialSegUID']}&"
     f"dicomweb=us-central1-idc-external-031.cloudfunctions.net/segverify_proxy1",
     axis=1)
 
-
 os.makedirs(output_dir, exist_ok=True)
-
-'''explanation_html = """
-<div style='margin-top:20px; font-family: sans-serif; color:#333;'>
-  <h4>Explanation:</h4>
-  <p>
-    The chart shows the Overlap Volume as a percentage of the Model Volume. 
-    The background is divided into colored zones to indicate different ranges:
-  </p>
-  <ul>
-    <li style='background-color:rgba(0, 128, 0, 0.15);'>Green (100%–90%): High overlap.</li>
-    <li style='background-color:rgba(255, 165, 0, 0.2);'>Orange (90%–75%): High/Moderate overlap.</li>
-    <li style='background-color:rgba(255, 0, 0, 0.15);'>Red (75%–50%): Moderate overlap.</li>
-    <li style='background-color:rgba(0, 0, 255, 0.12);'>Blue (50%–25%): Lower overlap.</li>
-  </ul>
-  <p>
-    The dotted black line at 50% helps visually identify a half-overlap threshold. 
-    Each symbol corresponds to a particular anatomical structure (segment) from the selected group.
-    The color of the points indicates which segmentation model they belong to; identical colors = same model.
-    Grey dashed lines connect multiple measurements of the same structure within a series.
-    Click on points to open the segmentations in a new OHIF Viewer tab.
-  </p>
-</div>
-"""'''
 
 for group_name, seg_list in custom_segment_groups:
     group_df = df_long[df_long["segment"].isin(seg_list)].copy()
@@ -197,8 +218,8 @@ for group_name, seg_list in custom_segment_groups:
         y="OverlapPercent",
         color="method_display",
         symbol="segment",
-        symbol_map=group_symbols,                   
-        category_orders={"segment": seg_list},      
+        symbol_map=group_symbols,
+        category_orders={"segment": seg_list},
         labels={
             "ModelVolume": "Structure Volume (mL) for each Model",
             "OverlapPercent": "Consensus Volume (% of Structure Volume)",
@@ -208,7 +229,6 @@ for group_name, seg_list in custom_segment_groups:
         custom_data=["url"],
         color_discrete_map=custom_palette
     )
-
 
     fig.add_traces(list(scatter_fig.data))
 
@@ -237,11 +257,10 @@ for group_name, seg_list in custom_segment_groups:
       var explanationDiv = document.createElement('div');
       plotDiv.parentNode.insertBefore(explanationDiv, plotDiv.nextSibling);
     """
-    #explanationDiv.innerHTML = `{explanation_html}`;
 
     fig.write_html(
         output_path,
-        include_plotlyjs=True,   
+        include_plotlyjs=True,
         full_html=True,
         post_script=post_script
     )
