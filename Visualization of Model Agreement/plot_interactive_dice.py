@@ -5,6 +5,7 @@ import plotly.express as px
 from google.cloud import bigquery
 import google.auth
 import sys
+import re
 
 if len(sys.argv) != 3:
     print("Usage: python plot_interactive_dice.py <input_csv> <output_html>")
@@ -80,23 +81,71 @@ query = """
 """
 df_bq = client.query(query).to_dataframe()
 
-study_mapping = (df_bq[['ct_SeriesInstanceUID','StudyInstanceUID']]
-                 .drop_duplicates()
-                 .set_index('ct_SeriesInstanceUID')['StudyInstanceUID'])
+df_bq["SeriesDescription"] = df_bq["SeriesDescription"].fillna("").astype(str)
+df_bq["SeriesDescription_lc"] = df_bq["SeriesDescription"].str.lower()
 
-def all_seg_for(study_id, ct_series_id):
-    return ",".join(
-        df_bq[(df_bq["StudyInstanceUID"] == study_id) &
-              (df_bq["ct_SeriesInstanceUID"] == ct_series_id)]["seg_SeriesInstanceUID"].tolist()
-    )
+if "Modality" in df_bq.columns:
+    df_bq_seg = df_bq[df_bq["Modality"].astype(str).str.upper().eq("SEG")].copy()
+    if df_bq_seg.empty:
+        df_bq_seg = df_bq.copy()
+else:
+    df_bq_seg = df_bq.copy()
 
-df['studyID'] = df['caseID'].map(study_mapping).fillna("UNKNOWN")
-df['url'] = df.apply(lambda r:
-                     f"https://segverify-viewer.web.app/viewer?"
-                     f"StudyInstanceUIDs={r['studyID']}&"
-                     f"SeriesInstanceUIDs={r['caseID']},{all_seg_for(r['studyID'], r['caseID'])}&"
-                     f"dicomweb=us-central1-idc-external-031.cloudfunctions.net/segverify_proxy1",
-                     axis=1)
+study_mapping = (
+    df_bq[["ct_SeriesInstanceUID", "StudyInstanceUID"]]
+    .drop_duplicates()
+    .set_index("ct_SeriesInstanceUID")["StudyInstanceUID"]
+)
+
+method_seriesdescription_names = {
+    "AUTO3DSEG": ["Auto3DSeg"],
+    "MOOSE": ["MOOSE"],
+    "MULTITALENT": ["Multitalent"],
+    "OMAS": ["OMAS"],
+    "TOTALSEGMENTATOR_1.5": ["TotalSegmentator(v1.5.6)"],
+    "TOTALSEGMENTATOR_2.6": ["TotalSegmentator-"],
+}
+
+def get_seg_uid_for_method(study_id, ct_series_id, method):
+    sub = df_bq_seg[
+        (df_bq_seg["StudyInstanceUID"] == study_id) &
+        (df_bq_seg["ct_SeriesInstanceUID"] == ct_series_id)
+    ]
+    if sub.empty:
+        return ""
+
+    method_u = str(method).upper()
+    patterns = method_seriesdescription_names.get(method_u, [])
+
+    for p in patterns:
+        p_lc = p.lower()
+        hit = sub[sub["SeriesDescription_lc"].str.contains(re.escape(p_lc), na=False)]
+        if not hit.empty:
+            return hit["seg_SeriesInstanceUID"].iloc[0]
+
+    return sub["seg_SeriesInstanceUID"].iloc[0]
+
+def get_all_segmentations(study_id, ct_series_id):
+    matching_segs = df_bq[
+        (df_bq["StudyInstanceUID"] == study_id) &
+        (df_bq["ct_SeriesInstanceUID"] == ct_series_id)
+    ]["seg_SeriesInstanceUID"].dropna().tolist()
+    return ",".join(matching_segs)
+
+df["studyID"] = df["caseID"].map(study_mapping).fillna("UNKNOWN")
+df["initialSegUID"] = df.apply(
+    lambda r: get_seg_uid_for_method(r["studyID"], r["caseID"], r["method"]),
+    axis=1
+)
+
+df["url"] = df.apply(lambda r:
+    f"https://segverify-viewer.web.app/viewer?"
+    f"StudyInstanceUIDs={r['studyID']}&"
+    f"SeriesInstanceUIDs={r['caseID']},{get_all_segmentations(r['studyID'], r['caseID'])}&"
+    f"initialSeriesInstanceUID={r['initialSegUID']}&"
+    f"dicomweb=us-central1-idc-external-031.cloudfunctions.net/segverify_proxy1",
+    axis=1
+)
 
 fig = go.Figure()
 
