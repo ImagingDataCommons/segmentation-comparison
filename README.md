@@ -1,12 +1,12 @@
 # In Search of Truth: Evaluating Concordance of AI-Based Anatomy Segmentation Models
 
-This repository contains the code and analysis scripts accompanying the following preprint.
+This repository contains the code and analysis scripts accompanying the following publication.
 
-> Giebeler, L., Krishnaswamy, D., Clunie, D., Wasserthal, J., Sundar, L. K. S., Diaz-Pinto, A., Maier-Hein, K. H., Xu, M., Menze, B., Pieper, S., Kikinis, R. & Fedorov, A. In search of truth: Evaluating concordance of AI-based anatomy segmentation models. arXiv [eess.IV] (2025). [doi:10.48550/arXiv.2512.15921](https://doi.org/10.48550/arXiv.2512.15921)
+> Giebeler, L., Krishnaswamy, D., Clunie, D., Wasserthal, J., Sundar, L. K. S., Diaz-Pinto, A., Maier-Hein, K. H., Xu, M., Menze, B., Pieper, S., Kikinis, R. & Fedorov, A. In search of truth: Evaluating concordance of AI-based anatomy segmentation models. *Journal of Medical Imaging* **13**(6), 062204 (2026). [doi:10.1117/1.JMI.13.6.062204](https://doi.org/10.1117/1.JMI.13.6.062204)
 
 The scripts implement a practical framework for harmonizing, comparing, and visually inspecting anatomy segmentation results from multiple AI models in the absence of ground-truth annotations. They aim to support informed model selection and transparent evaluation of AI-based segmentation methods.
 
-> **Preprint:** https://doi.org/10.48550/arXiv.2512.15921
+> **Publication:** https://doi.org/10.1117/1.JMI.13.6.062204
 > 
 > **Interactive plots:** https://imagingdatacommons.github.io/segmentation-comparison/  
 >
